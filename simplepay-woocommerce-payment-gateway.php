@@ -280,7 +280,7 @@ function tbz_wc_simplepay_init() {
 						    }else{
 						    	if(isset($_POST['ResponseCode'])&& isset($_POST['ReasonCode'])){
 						    		
-						    		echo '<p class="woocommerce-error" role="alert">' . __( '<b>Payment failed due to '.$_POST['ReasonCodeDesc'].'.</b><br />Kindly contact us at (sn@prism-a1.com) for more information regarding your order and payment status.', 'txtdomain' ) . '</p>';
+						    		echo '<p class="woocommerce-error" role="alert">' . __( '<b>Payment failed due to '.$_POST['ReasonCodeDesc'].'.</b><br />Kindly contact us at () for more information regarding your order and payment status.', 'txtdomain' ) . '</p>';
 						    		
 						    		$order->update_status( 'on-hold', '' );
 
